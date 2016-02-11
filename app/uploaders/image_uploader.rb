@@ -8,7 +8,7 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Choose what kind of storage to use for this uploader:
   #storage :file
-   storage :fog
+   storage :aws
 
    process resize_to_fill: [800, 350]
 
